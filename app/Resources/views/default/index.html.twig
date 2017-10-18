@@ -1,5 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {% for s in sections %}
+        <a href="{{ path("admin_section_show",{'id':s.id}) }}">{{ s.theTitle }}</a> |
 
+    {% endfor %}
+    {% for a in articles %}
+        <h3>{{ a.theTitle }}</h3>
+        <p>{{ a.theText }}</p>
+        <p>Ecrit le {{ a.theDate|date("Y-m-d") }} par {{ a.fosUser.username }}</p>
+        <hr/>
+    {% endfor %}
 {% endblock %}

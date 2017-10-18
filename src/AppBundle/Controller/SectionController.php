@@ -65,11 +65,11 @@ class SectionController extends Controller
      */
     public function showAction(Section $section)
     {
-        $deleteForm = $this->createDeleteForm($section);
+
 
         return $this->render('section/show.html.twig', array(
             'section' => $section,
-            'delete_form' => $deleteForm->createView(),
+
         ));
     }
 

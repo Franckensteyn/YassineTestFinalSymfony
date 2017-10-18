@@ -31,7 +31,8 @@ class Section
     /**
      * @var \Doctrine\Common\Collections\Collection
      *
-     * @ORM\ManyToMany(targetEntity="Article", inversedBy="section")
+     * @ORM\ManyToMany(targetEntity="Article")
+     *
      * @ORM\JoinTable(name="section_has_article",
      *   joinColumns={
      *     @ORM\JoinColumn(name="section_id", referencedColumnName="id")
@@ -49,6 +50,9 @@ class Section
     public function __construct()
     {
         $this->article = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    public function __toString() {
+        return $this->thetitle;
     }
 
 

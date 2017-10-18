@@ -16,9 +16,10 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $articles = $em->getRepository('AppBundle:Article')->findAll();
-
-        return $this->render('article/index.html.twig', array(
+        $sections = $em->getRepository('AppBundle:Section')->findAll();
+        return $this->render('default/index.html.twig', array(
             'articles' => $articles,
+            'sections' => $sections,
         ));
     }
 }
