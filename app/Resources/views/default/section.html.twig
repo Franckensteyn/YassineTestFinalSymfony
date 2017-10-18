@@ -6,17 +6,17 @@
     {% endfor %}<hr/>
 {% endblock %}
 {% block body %}
-    <h1>Musique Moderne</h1>
+    <h1>{{ titre }}</h1>
     {% for a in articles %}
         <hr/>
-        <h3>{{ a.thetitle }}</h3>
+        <h2>{{ a.thetitle }}</h2>
         <hr/>
-        <h5>{# Si il y a des sections (pas vide) #}
+        <h4>{# Si il y a des sections (pas vide) #}
             {% if not a.section.empty %}
                 {% for c in a.section %}
                     <a href="{{ path("sections",{ 'id': c.id }) }}">{{ c.thetitle }}</a>
                 {% endfor %}
-            {% endif %}</h5><hr/>
+            {% endif %}</h4><hr/>
         <p>{{ a.thetext }}</p>
         <p>{{ a.thedate|date("Y-m-d H:i:s") }} par {{ a.FosUser.username }}</p>
     {% endfor %}
