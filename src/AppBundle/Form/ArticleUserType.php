@@ -7,7 +7,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 
-class ArticleType extends AbstractType
+class ArticleUserType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -18,14 +18,13 @@ class ArticleType extends AbstractType
             ->add('thetitle')
             ->add('thetext')
             ->add('thedate')
-            ->add('fosUser')
             ->add('section',EntityType::class, array(
                 'class' => 'AppBundle:Section',
                 'multiple' => true,
                 'expanded' => true,
             ));
     }
-    
+
     /**
      * {@inheritdoc}
      */

@@ -35,7 +35,7 @@ framework:
 
 # Twig Configuration
 twig:
-    cache: false
+    form_themes: ['bootstrap_3_layout.html.twig']
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
 

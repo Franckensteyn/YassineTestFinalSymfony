@@ -1,5 +1,4 @@
 {% extends 'base.html.twig' %}
-
 {% block menu %}
     {% for s in sections %}
         <a href="{{ path("sections",{ 'id': s.id }) }}">{{ s.thetitle }}</a> -
