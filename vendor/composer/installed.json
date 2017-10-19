@@ -1310,67 +1310,6 @@
         ]
     },
     {
-        "name": "symfony/swiftmailer-bundle",
-        "version": "v2.6.3",
-        "version_normalized": "2.6.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/swiftmailer-bundle.git",
-            "reference": "11555c338f3c367b0a1bd2f024a53aa813f4ce00"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/11555c338f3c367b0a1bd2f024a53aa813f4ce00",
-            "reference": "11555c338f3c367b0a1bd2f024a53aa813f4ce00",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.2",
-            "swiftmailer/swiftmailer": "~4.2|~5.0",
-            "symfony/config": "~2.7|~3.0",
-            "symfony/dependency-injection": "~2.7|~3.0",
-            "symfony/http-kernel": "~2.7|~3.0"
-        },
-        "require-dev": {
-            "symfony/console": "~2.7|~3.0",
-            "symfony/framework-bundle": "~2.7|~3.0",
-            "symfony/phpunit-bridge": "~3.3@dev",
-            "symfony/yaml": "~2.7|~3.0"
-        },
-        "suggest": {
-            "psr/log": "Allows logging"
-        },
-        "time": "2017-07-22T07:18:13+00:00",
-        "type": "symfony-bundle",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.6-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Bundle\\SwiftmailerBundle\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            },
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            }
-        ],
-        "description": "Symfony SwiftmailerBundle",
-        "homepage": "http://symfony.com"
-    },
-    {
         "name": "sensio/generator-bundle",
         "version": "v3.1.6",
         "version_normalized": "3.1.6.0",
@@ -2516,5 +2455,66 @@
         "keywords": [
             "User management"
         ]
+    },
+    {
+        "name": "symfony/swiftmailer-bundle",
+        "version": "v2.6.7",
+        "version_normalized": "2.6.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/swiftmailer-bundle.git",
+            "reference": "c4808f5169efc05567be983909d00f00521c53ec"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/c4808f5169efc05567be983909d00f00521c53ec",
+            "reference": "c4808f5169efc05567be983909d00f00521c53ec",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2",
+            "swiftmailer/swiftmailer": "~4.2|~5.0",
+            "symfony/config": "~2.7|~3.0",
+            "symfony/dependency-injection": "~2.7|~3.0",
+            "symfony/http-kernel": "~2.7|~3.0"
+        },
+        "require-dev": {
+            "symfony/console": "~2.7|~3.0",
+            "symfony/framework-bundle": "~2.7|~3.0",
+            "symfony/phpunit-bridge": "~3.3@dev",
+            "symfony/yaml": "~2.7|~3.0"
+        },
+        "suggest": {
+            "psr/log": "Allows logging"
+        },
+        "time": "2017-10-19T01:06:41+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.6-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Bundle\\SwiftmailerBundle\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Symfony SwiftmailerBundle",
+        "homepage": "http://symfony.com"
     }
 ]
