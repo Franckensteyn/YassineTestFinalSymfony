@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
+{% block content %}
     <h1>Article</h1>
 
-    <table>
+    <table class="table table-bordered">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -24,7 +24,7 @@
         </tbody>
     </table>
 
-    <ul>
+    <ul style="list-style-type: none;">
         <li>
             <a href="{{ path('admin_article_index') }}">Back to the list</a>
         </li>

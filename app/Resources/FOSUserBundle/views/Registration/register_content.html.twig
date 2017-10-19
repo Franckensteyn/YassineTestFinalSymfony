@@ -1,0 +1,60 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="container">
+    <div class="row main">
+        <div class="main-login main-center">
+            <h5>Enregistrez vous pour profiter de l'actualité.</h5>
+            <form name="fos_user_registration_form" method="post" action="/register/"
+                  class="fos_user_registration_register">
+                <div id="fos_user_registration_form">
+                    <div class="form-group">
+                        <label for="fos_user_registration_form_email" class="required">Email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="fos_user_registration_form_email"
+                                   name="fos_user_registration_form[email]" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fos_user_registration_form_username" class="required"
+                               class="cols-sm-2 control-label">Username</label>
+                        <div class="input-group">
+                            <input type="text"
+                                   id="fos_user_registration_form_username" class="form-control"
+                                   name="fos_user_registration_form[username]"
+                                   required="required"
+                                   maxlength="180"
+                                   pattern=".{2,}"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fos_user_registration_form_plainPassword_first" class="required"
+                               class="cols-sm-2 control-label">Password</label>
+                        <div class="input-group">
+                            <input
+                                    type="password" id="fos_user_registration_form_plainPassword_first"
+                                    class="form-control"
+                                    name="fos_user_registration_form[plainPassword][first]" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fos_user_registration_form_plainPassword_second" class="required"
+                               class="cols-sm-2 control-label">Repeat password</label>
+                        <div class="input-group">
+                            <input
+                                    type="password" id="fos_user_registration_form_plainPassword_second"
+                                    class="form-control"
+                                    name="fos_user_registration_form[plainPassword][second]" required="required"/>
+                        </div>
+                    </div>
+                    <input type="hidden" id="fos_user_registration_form__token"
+                           name="fos_user_registration_form[_token]"
+                           value="Uh_mdYISBYr-0X9fLAQK6FXC-JrcYsO8MGuduSy7mDQ"/>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary btn-lg btn-block login-button" value="Register"/>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
+{% block content %}
     <h1>Sections list</h1>
-
-    <table>
+<div class="table-responsive">
+    <table  class="table table-bordered">
         <thead>
             <tr>
                 <th>Id</th>
@@ -17,7 +17,7 @@
                 <td><a href="{{ path('admin_section_show', { 'id': section.id }) }}">{{ section.id }}</a></td>
                 <td>{{ section.thetitle }}</td>
                 <td>
-                    <ul>
+                    <ul style="list-style-type: none;" >
                         <li>
                             <a href="{{ path('admin_section_show', { 'id': section.id }) }}">show</a>
                         </li>
@@ -27,8 +27,8 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <ul>
+</div>
+    <ul style="list-style-type: none;" >
         <li>
             <a href="{{ path('admin_section_new') }}">Create a new section</a>
         </li>
